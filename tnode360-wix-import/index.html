@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="T-Node 360 People — UAE-ready HRMS for growing organizations.">
+<title>T-Node 360 People | UAE HRMS</title>
+<style>
+:root{--navy:#0A2540;--deep:#041424;--teal:#00C6A7;--cyan:#00B9FF;--cloud:#F7FAFC;--slate:#526475;--line:#DDE8EF}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Sora","Segoe UI",Arial,sans-serif;color:var(--navy);background:#fff;-webkit-font-smoothing:antialiased}a{text-decoration:none;color:inherit}
+.site-header{height:92px;display:flex;align-items:center;justify-content:space-between;gap:32px;padding:0 3.4vw;background:#fff;border-bottom:1px solid #edf2f5;position:relative;z-index:20}
+.brand{display:flex;align-items:center;gap:13px;flex:0 0 auto}.brand-crop{width:58px;height:58px;overflow:hidden;border-radius:18px;position:relative;background:#071a2e;box-shadow:0 7px 18px rgba(0,185,255,.15)}
+.brand-crop img{position:absolute;width:88px;height:88px;object-fit:cover;left:-15px;top:-8px;object-position:center 20%}.brand-text{line-height:1.06}.brand-name{font-size:22px;font-weight:800;letter-spacing:-.025em;white-space:nowrap}.brand-name .n360{color:#168FE6}.brand-name .people{color:#17A987}.brand-sub{margin-top:6px;font-size:12px;color:#526475}
+.main-nav{display:flex;align-items:center;justify-content:center;gap:44px;font-size:14px;font-weight:650;color:#15243A;flex:1}.main-nav a:hover{color:#008FC5}.header-actions{display:flex;align-items:center;gap:22px}.language{font-size:14px;font-weight:650}.book{padding:16px 28px;color:#fff;border-radius:10px;font-weight:750;background:linear-gradient(135deg,#0082D9 0%,#0079B8 46%,#008F8A 100%);box-shadow:0 10px 24px rgba(0,111,170,.18)}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 58% 45%,rgba(0,185,255,.12),transparent 24%),radial-gradient(circle at 91% 20%,rgba(0,198,167,.11),transparent 22%),linear-gradient(107deg,#041322 0%,#061A2E 47%,#06304D 100%);min-height:626px}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(255,255,255,.015) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.015) 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(90deg,black 0%,rgba(0,0,0,.7) 42%,transparent 76%)}
+.hero-inner{position:relative;z-index:3;min-height:626px;max-width:1700px;margin:0 auto;padding:46px 3.5vw 36px;display:grid;grid-template-columns:43% 57%;align-items:center;gap:18px}.hero-copy{padding-right:18px}.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:10px 15px;border-radius:999px;background:rgba(0,185,255,.11);border:1px solid rgba(0,185,255,.25);color:#E4F9FF;font-size:13px;font-weight:800;letter-spacing:.03em;margin-bottom:24px}
+.hero h1{margin:0;max-width:720px;color:#fff;font-size:clamp(52px,4.6vw,76px);line-height:1.03;letter-spacing:-.045em}.hero h1 .accent{display:block;margin-top:2px;color:#19D4DD}.hero-description{max-width:660px;margin:24px 0 30px;color:#D2E2ED;font-size:17px;line-height:1.72}
+.proofs{display:flex;flex-wrap:wrap;gap:22px 28px;margin-bottom:31px}.proof{min-width:165px;display:flex;gap:12px;align-items:center;color:#fff}.proof-icon{width:50px;height:50px;flex:0 0 50px;display:grid;place-items:center;border-radius:50%;border:1px solid var(--teal);color:#24DAC6;background:rgba(0,198,167,.04)}.proof b{display:block;font-size:14px;margin-bottom:4px}.proof small{display:block;color:#BFD1DD;font-size:11px;line-height:1.42}
+.ctas{display:flex;align-items:center;gap:19px}.cta-primary,.cta-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:54px;border-radius:12px;font-weight:750;font-size:15px}.cta-primary{min-width:230px;color:#fff;background:linear-gradient(135deg,#00A7DC,#00C6A7);box-shadow:0 12px 30px rgba(0,198,167,.20)}.cta-secondary{min-width:275px;color:#fff;border:1px solid rgba(255,255,255,.58);background:rgba(255,255,255,.025)}
+.hero-visual{position:relative;min-height:560px;display:flex;align-items:center;justify-content:flex-end}.rings{position:absolute;left:1%;top:1%;width:600px;height:600px;border-radius:50%;background:repeating-radial-gradient(circle,transparent 0 46px,rgba(0,185,255,.09) 47px 48px,transparent 49px 64px);opacity:.75}
+.dubai{position:absolute;right:-1.5%;bottom:0;width:26%;height:92%;z-index:1}.dubai svg{width:100%;height:100%}
+.laptop{position:relative;z-index:4;width:min(840px,95%);transform:perspective(1400px) rotateY(-2.8deg) rotateX(1.3deg);filter:drop-shadow(0 34px 38px rgba(0,0,0,.4))}.screen-shell{position:relative;background:linear-gradient(145deg,#121820,#060a0e 65%,#1f2930);padding:12px;border-radius:22px 22px 12px 12px;box-shadow:inset 0 0 0 2px #424a50}.screen-shell img{display:block;width:100%;border-radius:11px;background:#fff}.camera{position:absolute;top:5px;left:50%;width:5px;height:5px;border-radius:50%;background:#68747b}.base{width:93%;height:24px;margin:-1px auto 0;background:linear-gradient(#cbd3d6,#68737a 46%,#222d33);clip-path:polygon(4% 0,96% 0,100% 54%,66% 76%,59% 100%,41% 100%,34% 76%,0 54%);box-shadow:0 9px 13px rgba(0,0,0,.28)}
+.value-band{position:relative;z-index:5;background:#fff;border-radius:18px 18px 0 0;margin-top:-1px;padding:18px 3.5vw 24px;border-bottom:1px solid #e6eef3}.value-inner{max-width:1500px;margin:0 auto}.value-title{text-align:center;margin-bottom:16px;color:var(--navy);font-size:20px;font-weight:800;letter-spacing:-.02em}.values{border-top:1px solid #E3EBF0;padding-top:18px;display:grid;grid-template-columns:repeat(4,1fr)}.value{display:flex;align-items:center;gap:16px;padding:6px 28px;border-right:1px solid #E4EBF0}.value:last-child{border-right:0}.value-icon{width:48px;height:48px;flex:0 0 48px;display:grid;place-items:center;border-radius:50%;border:1px solid #D5E4EC;color:#008AA4;background:#FBFDFE;font-size:20px}.value b{display:block;color:var(--navy);font-size:14px;margin-bottom:5px}.value span{display:block;color:var(--slate);font-size:12px;line-height:1.45}
+@media(max-width:1180px){.main-nav{display:none}.hero-inner{grid-template-columns:1fr;padding-top:44px}.hero-copy{padding-right:0}.hero-visual{min-height:430px;justify-content:center}.values{grid-template-columns:1fr 1fr}.value{border-right:0;border-bottom:1px solid #E6EDF2;padding:14px 20px}}
+@media(max-width:720px){.site-header{height:76px;padding:0 18px;gap:12px}.brand-crop{width:44px;height:44px;border-radius:14px}.brand-crop img{width:68px;height:68px;left:-12px;top:-7px}.brand-name{font-size:16px}.brand-sub{font-size:9px;margin-top:4px}.language{display:none}.book{padding:12px 14px;font-size:12px}.hero-inner{padding:34px 20px 28px}.hero h1{font-size:42px}.hero-description{font-size:15px}.proofs{gap:16px}.proof{width:100%}.ctas{flex-direction:column;align-items:stretch}.cta-primary,.cta-secondary{width:100%;min-width:0}.hero-visual{min-height:325px}.rings{width:390px;height:390px;left:50%;transform:translateX(-50%)}.dubai{width:30%}.values{grid-template-columns:1fr}.value-title{font-size:18px}.value{border-bottom:1px solid #E6EDF2}}
+</style>
+</head>
+<body>
+<header class="site-header">
+<a class="brand" href="#">
+  <span class="brand-crop"><img src="https://static.wixstatic.com/media/cfa8d0_c30a46ad1fe942e6a07ad2023b3960ad~mv2.png" alt="T-Node 360 emblem"></span>
+  <span class="brand-text"><span class="brand-name">T-Node <span class="n360">360</span> <span class="people">People</span></span><span class="brand-sub">Powered by T-Node 360</span></span>
+</a>
+<nav class="main-nav"><a href="#product">Product⌄</a><a href="#solutions">Solutions⌄</a><a href="#why">Why T-Node 360</a><a href="#resources">Resources⌄</a><a href="#company">Company⌄</a></nav>
+<div class="header-actions"><div class="language">◎ EN⌄</div><a class="book" href="#demo">Book a Demo</a></div>
+</header>
+<main>
+<section class="hero" id="product">
+<div class="hero-inner">
+  <div class="hero-copy">
+    <div class="eyebrow">🇦🇪 UAE HRMS PLATFORM</div>
+    <h1>UAE HRMS Built for<br>Growing Teams<span class="accent">Ready for Tomorrow</span></h1>
+    <p class="hero-description">T-Node 360 People connects workforce administration, attendance, leave, payroll, talent, documents and analytics in one secure platform designed for growing UAE organizations.</p>
+    <div class="proofs">
+      <div class="proof"><div class="proof-icon">◇</div><div><b>UAE-ready workflows</b><small>Supports compliant HR processes</small></div></div>
+      <div class="proof"><div class="proof-icon">▣</div><div><b>Secure by design</b><small>Responsible access and visibility</small></div></div>
+      <div class="proof"><div class="proof-icon">◉</div><div><b>Built for growth</b><small>Modular, connected HR operations</small></div></div>
+    </div>
+    <div class="ctas"><a class="cta-primary" href="#demo">Book a Demo →</a><a class="cta-secondary" href="#solutions">Explore T-Node 360 People ›</a></div>
+  </div>
+  <div class="hero-visual">
+    <div class="rings"></div>
+    <div class="dubai" aria-hidden="true"><svg viewBox="0 0 260 560" preserveAspectRatio="xMidYMax meet"><defs><linearGradient id="tower" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e4fbff"/><stop offset=".26" stop-color="#00B9FF" stop-opacity=".88"/><stop offset="1" stop-color="#00C6A7" stop-opacity=".34"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><path d="M154 546V258h11v-72h6v-56h5V68h4V17h3v51h4v62h5v56h6v72h11v288Z" fill="url(#tower)" filter="url(#glow)" opacity=".9"/><path d="M177 17V1" stroke="#d9fbff" stroke-width="2"/><path d="M20 546V422h26v-77h22v201H20Zm64 0V380h22v-62h21v228H84Zm125 0V400h19v-86h18v232h-37Z" fill="#00B9FF" opacity=".22"/><ellipse cx="180" cy="548" rx="112" ry="17" fill="#00C6A7" opacity=".20"/></svg></div>
+    <div class="laptop">
+      <div class="screen-shell"><span class="camera"></span><img src="https://static.wixstatic.com/media/cfa8d0_d05dc2af49754bd391c2beaeefc0e47d~mv2.png" alt="T-Node 360 People HR Manager dashboard"></div>
+      <div class="base"></div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="value-band" id="why"><div class="value-inner"><div class="value-title">Built for modern UAE HR operations</div><div class="values">
+<div class="value"><div class="value-icon">▱</div><div><b>All-in-One HRMS</b><span>Manage the employee lifecycle from one connected platform.</span></div></div>
+<div class="value"><div class="value-icon">▥</div><div><b>Real-time Insights</b><span>Make faster decisions with live dashboards and actionable data.</span></div></div>
+<div class="value"><div class="value-icon">♙</div><div><b>Employee Ready</b><span>Enable self-service and transparent role-based experiences.</span></div></div>
+<div class="value"><div class="value-icon">✧</div><div><b>Future Ready</b><span>Scalable, secure and designed to grow with the organization.</span></div></div>
+</div></div></section>
+</main>
+</body></html>
